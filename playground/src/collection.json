@@ -1,0 +1,41 @@
+{
+  "$schema": "../node_modules/@angular-devkit/schematics/collection-schema.json",
+  "schematics": {
+    "playground": {
+      "description": "A blank schematic that will just log that it works.",
+      "factory": "./playground/index#playground"
+    },
+    "dependencies": {
+      "description": "Helpers for dependency operations.",
+      "factory": "./dependencies/index#playground"
+    },
+    "insert": {
+      "description": "Helpers for insert operations.",
+      "factory": "./insert/index#playground"
+    },
+    "relative-path": {
+      "description": "A helper for determining the relative path to the project root.",
+      "factory": "./relative-path/index#playground"
+    },
+    "import": {
+      "description": "A helper for adding import statements.",
+      "factory": "./import/index#playground"
+    },
+    "module": {
+      "description": "Modify NgModules.",
+      "factory": "./module/index#playground"
+    },
+    "config": {
+      "description": "Work with then `angular.json` configuration.",
+      "factory": "./config/index#playground"
+    },
+    "workspace": {
+      "description": "A helper to retrieve a projects default path in the workspace.",
+      "factory": "./workspace/index#playground"
+    },
+    "schematic-task": {
+      "description": "Call another schematic.",
+      "factory": "./schematic-task/index#playground"
+    }
+  }
+}

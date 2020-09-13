@@ -1,0 +1,3 @@
+{
+  "foo": "<%= relativePathToWorkspaceRoot %>/my-file-ref.json"
+}
