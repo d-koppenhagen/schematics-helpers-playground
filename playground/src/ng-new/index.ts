@@ -16,7 +16,7 @@ export function playground(options: AngularNgNewSchema): Rule {
   return async (_tree: Tree, _context: SchematicContext) => {
     const angularSchematicsPackage = '@schematics/angular';
     const ngNewOptions: AngularNgNewSchema = {
-      version: '10.1.0',
+      version: '11.0.0',
       name: options.name,
       routing: true,
       strict: true,
