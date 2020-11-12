@@ -1,6 +1,6 @@
-# Getting Started With Schematics
+# Getting Started With schematics
 
-This repository is a basic Schematic implementation that serves as a starting point to create and publish Schematics to NPM.
+This repository is a basic schematic implementation that serves as a starting point to create and publish schematics to NPM.
 
 ### Testing
 
@@ -25,4 +25,3 @@ npm publish
 ```
 
 That's it!
- 

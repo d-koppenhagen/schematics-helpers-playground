@@ -1,6 +1,6 @@
 # Schematic Helpers Playground
 
-This is a playground project related to my blog post [**Create Angular Schematics with common helpers**](https://d-koppenhagen.de/blog/2020-09-angular-schematics-common-helpers) and contains all the examples I described there.
+This is a playground project related to my blog post [**Create Angular schematics with common helpers**](https://d-koppenhagen.de/blog/2020-09-angular-schematics-common-helpers) and contains all the examples I described there.
 
 ## Play around
 
@@ -31,22 +31,23 @@ schematics ../playground/src/collection.json:playground
 ## The examples
 
 All the example schematics are executed / build as described in the section above.
-The examples are related to my blog post [**Create Angular Schematics with common helpers**](https://d-koppenhagen.de/blog/2020-09-angular-schematics-common-helpers).
+The examples are related to my blog post [**Create Angular schematics with common helpers**](https://d-koppenhagen.de/blog/2020-09-angular-schematics-common-helpers).
 
 To execute and check a specific helper functions from the examples in the blog post, simply use the appropriate schematic name for execution (`collection.json:<NAME>`).
 The Table below shows you an overview of the available examples:
 
-| Schematic name   | Description                                                     |
-| ---------------- | --------------------------------------------------------------- |
-| `playground`     | Just logs that everything works.                                |
-| `dependencies`   | Helpers for dependency operations.                              |
-| `insert`         | Helpers for insert operations.                                  |
-| `relative-path`  | A helper for determining the relative path to the project root. |
-| `import`         | A helper for adding import statements.                          |
-| `module`         | Modify `NgModule`s.                                             |
-| `config`         | Work with then `angular.json` configuration.                    |
-| `workspace`      | A helper to retrieve a projects default path in the workspace.  |
-| `schematic-task` | Call another schematic.                                         |
+| schematic name   | Description                                                                                 |
+| ---------------- | --------------------------------------------------------------------------------------------|
+| `playground`     | Just logs that everything works.                                                            |
+| `dependencies`   | Helpers for dependency operations.                                                          |
+| `insert`         | Helpers for insert operations.                                                              |
+| `relative-path`  | A helper for determining the relative path to the project root.                             |
+| `import`         | A helper for adding import statements.                                                      |
+| `module`         | Modify `NgModule`s.                                                                         |
+| `config`         | Work with then `angular.json` configuration.                                                |
+| `workspace`      | A helper to retrieve a projects default path in the workspace.                              |
+| `ng-add`         | Call another schematic.                                                                     |
+| `ng-new`         | Execute `ng new` with predefined options and run other stuff and run the `ng-add` schematic |
 
 > Running the schematics locally — by default — just changes on the virtual representation of the target Angular workspace.
 > To apply the changes on the real workspace, you need to pass the flag `--debug=false` through the `schematics` command.
